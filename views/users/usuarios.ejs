@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <%- include('../partials/resources.ejs'); %>
+	<title>Sapma - Inicio</title>
+</head>
+<body class="with-side-menu">
+
+	<header class="site-header">
+		<%- include('../partials/nav.ejs'); %>
+	</header><!--.site-header-->
+
+	<div class="mobile-menu-left-overlay "></div>
+    <%- include('../partials/navlat.ejs'); %>
+
+    <div class="page-content">
+		<div class="container-fluid">
+			<header class="section-header">
+				<div class="tbl">
+					<div class="tbl-row">
+						<div class="tbl-cell">
+							<h3>Usuarios</h3>
+							<ol class="breadcrumb breadcrumb-simple">
+								<li><a href="home">Inicio</a></li>
+								<li class="active">Mantenimiento Usuario</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="box-typical box-typical-padding">
+				<button type="button" id="btnnuevo" class="btn btn-inline btn-primary">Nuevo Registro</button>
+			</div>
+
+		</div>
+	</div>
+
+	<%- include('../partials/js.ejs'); %>
+
+<script src="resources/js/app.js"></script>
+</body>
+</html>
